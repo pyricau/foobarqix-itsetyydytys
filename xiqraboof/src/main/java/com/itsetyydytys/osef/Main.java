@@ -1,14 +1,18 @@
 package com.itsetyydytys.osef;
 
+import com.itsetyydytys.osef.integerbomb.MaryPoppins;
+
 public class Main {
 
 	public static void main(String... args) {
 
+		MaryPoppins.supercalifragilisticexpialidocious(58);
+
 		FooBarQixorFactory factory = new FooBarQixorFactory();
 		FooBarQixor fooBarQixor = factory.buildConfigurableFooBarQixor();
-		IntRangeWriter fooBarQixWriter = new IntRangeWriter(fooBarQixor, System.out);
+		RangeWriter fooBarQixWriter = new IntegerRangeWriter(fooBarQixor, System.out);
 
-		fooBarQixWriter.writeRange(1, 100);
+		fooBarQixWriter.writeRange(-57, 42);
 	}
 
 }

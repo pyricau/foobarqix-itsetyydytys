@@ -20,7 +20,7 @@ public class IntRangeWriterTest {
 
 	private InitialFooBarQixor numberProcessor;
 	private PrintStream out;
-	private IntRangeWriter writer;
+	private RangeWriter writer;
 
 	@Before
 	public void setup() {

@@ -2,12 +2,17 @@ package com.itsetyydytys.osef;
 
 import java.io.PrintStream;
 
-public class IntRangeWriter implements RangeWriter {
+import com.itsetyydytys.osef.integerbomb.MaryPoppins;
+
+/**
+ * This range writer uses an Integer instead of an int. It is therefore sensible to {@link MaryPoppins}
+ */
+public class IntegerRangeWriter implements RangeWriter {
 
 	private final FooBarQixor numberProcessor;
 	private final PrintStream out;
 
-	public IntRangeWriter(FooBarQixor numberProcessor, PrintStream out) {
+	public IntegerRangeWriter(FooBarQixor numberProcessor, PrintStream out) {
 		this.numberProcessor = numberProcessor;
 		this.out = out;
 	}
@@ -19,7 +24,8 @@ public class IntRangeWriter implements RangeWriter {
 		}
 
 		for (int number = start; number <= inclusiveEnd; number++) {
-			out.println(numberProcessor.process(number));
+			Integer asInteger = number;
+			out.println(numberProcessor.process(asInteger));
 		}
 	}
 
