@@ -4,10 +4,10 @@ import java.io.PrintStream;
 
 public class IntRangeWriter {
 
-	private final NumberProcessor numberProcessor;
+	private final FooBarQixor numberProcessor;
 	private final PrintStream out;
 
-	public IntRangeWriter(NumberProcessor numberProcessor, PrintStream out) {
+	public IntRangeWriter(FooBarQixor numberProcessor, PrintStream out) {
 		this.numberProcessor = numberProcessor;
 		this.out = out;
 	}

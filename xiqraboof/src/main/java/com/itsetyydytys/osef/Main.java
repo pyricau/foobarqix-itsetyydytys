@@ -1,13 +1,13 @@
 package com.itsetyydytys.osef;
 
-import java.io.PrintStream;
-
 public class Main {
 
 	public static void main(String... args) {
-		NumberProcessor numberProcessor = new NumberProcessor();
-		PrintStream out = System.out;
-		IntRangeWriter fooBarQixWriter = new IntRangeWriter(numberProcessor, out);
+
+		FooBarQixorFactory factory = new FooBarQixorFactory();
+		FooBarQixor fooBarQixor = factory.buildConfigurableFooBarQixor();
+		IntRangeWriter fooBarQixWriter = new IntRangeWriter(fooBarQixor, System.out);
+
 		fooBarQixWriter.writeRange(1, 100);
 	}
 

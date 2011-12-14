@@ -14,15 +14,17 @@ import org.junit.Test;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
 
+import com.itsetyydytys.osef.initial.InitialFooBarQixor;
+
 public class IntRangeWriterTest {
 
-	private NumberProcessor numberProcessor;
+	private InitialFooBarQixor numberProcessor;
 	private PrintStream out;
 	private IntRangeWriter writer;
 
 	@Before
 	public void setup() {
-		numberProcessor = mock(NumberProcessor.class);
+		numberProcessor = mock(InitialFooBarQixor.class);
 		out = mock(PrintStream.class);
 		writer = new IntRangeWriter(numberProcessor, out);
 	}

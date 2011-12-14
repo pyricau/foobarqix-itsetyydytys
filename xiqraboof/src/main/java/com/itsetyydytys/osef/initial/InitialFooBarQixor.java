@@ -1,7 +1,10 @@
-package com.itsetyydytys.osef;
+package com.itsetyydytys.osef.initial;
 
-public class NumberProcessor {
+import com.itsetyydytys.osef.FooBarQixor;
 
+public class InitialFooBarQixor implements FooBarQixor {
+
+	@Override
 	public String process(int number) {
 
 		StringBuilder result = new StringBuilder();

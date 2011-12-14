@@ -11,12 +11,10 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-@RunWith(Parameterized.class)
-public class NumberProcessorTest {
+import com.itsetyydytys.osef.initial.InitialFooBarQixor;
 
-	/*
-	 * TODO utiliser un truc qui change le code au hazard
-	 */
+@RunWith(Parameterized.class)
+public class InitialFooBarQixorTest {
 
 	@Parameters
 	public static Collection<Object[]> generateTestCases() {
@@ -56,13 +54,13 @@ public class NumberProcessorTest {
 		return asList(testCases);
 	}
 
-	private NumberProcessor underTest;
+	private FooBarQixor underTest;
 
 	private final int input;
 	private final String expected;
 	private final String description;
 
-	public NumberProcessorTest(int input, String expected, String description) {
+	public InitialFooBarQixorTest(int input, String expected, String description) {
 		this.input = input;
 		this.expected = expected;
 		this.description = description;
@@ -70,7 +68,7 @@ public class NumberProcessorTest {
 
 	@Before
 	public void setUp() {
-		underTest = new NumberProcessor();
+		underTest = new InitialFooBarQixor();
 	}
 
 	@Test
