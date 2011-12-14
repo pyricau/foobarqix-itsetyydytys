@@ -21,10 +21,6 @@ public class ConfigurableFooBarQixor implements FooBarQixor {
 			result.append(content);
 		}
 
-		if (result.length() == 0) {
-			result.append(number);
-		}
-
-		return result.toString();
+		return result.length() > 0 ? result.toString() : Integer.toString(number);
 	}
 }
